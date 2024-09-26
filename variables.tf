@@ -23,3 +23,14 @@ variable "s3_kms_key_arn" {
   description = "ARN for the CMK KMS key for S3"
   type        = string
 }
+
+variable "vpc_id" {
+  description = "ID for the VPC for the Base Security Groups"
+  type        = string
+}
+
+variable "create_base_sgs" {
+  description = "The key name to use for the EC2 Key Pair"
+  type        = bool
+  default     = false
+}
