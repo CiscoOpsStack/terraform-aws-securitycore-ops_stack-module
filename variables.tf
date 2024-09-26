@@ -27,6 +27,7 @@ variable "s3_kms_key_arn" {
 variable "vpc_id" {
   description = "ID for the VPC for the Base Security Groups"
   type        = string
+  default     = ""
 }
 
 variable "create_base_sgs" {
